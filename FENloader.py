@@ -10,10 +10,9 @@ translatorDikt = {
 FenString ="rnbqkbnr/pppppppp/8/8/8/8/PPPPPPPP/RNBQKBNR w KQkq - 0 1"
 i = 0
 
-
-while i<len(FenString):
-    print("test")
-    
-    i+=1
-print(len(FenString))
+for Symbol in FenString:
+    if(Symbol.isnumeric):
+        print("Zahl")
+    elif(Symbol.isalpha):
+        print("Buchstabe")
     
